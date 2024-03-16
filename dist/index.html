@@ -12,10 +12,18 @@
     <div id="game-area">
       <div id="board-area" class="flex gap-32">
         <div id="player-board" class="flex flex-col items-center">
-          <div id="player-grid"></div>
+          <div id="player-grid" class="grid grid-rows-11 grid-cols-11">
+            <div id="col-index" class="row-span-1 col-span-11 col-start-1 grid grid-cols-11"></div>
+            <div id="row-index" class="row-span-10 row-start-2 grid grid-rows-10"></div>
+            <div id="cells" class="col-start-2 col-span-10 row-span-10 row-start-2 grid grid-rows-10 grid-cols-10 border"></div>
+          </div>
         </div>
         <div id="opponent-board" class="flex flex-col items-center">
-          <div id="opponent-grid"></div>
+          <div id="opponent-grid" class="grid grid-rows-11 grid-cols-11">
+            <div id="col-index" class="row-span-1 col-span-11 col-start-1 grid grid-cols-11"></div>
+            <div id="row-index" class="row-span-10 row-start-2 grid grid-rows-10"></div>
+            <div id="cells" class="col-start-2 col-span-10 row-span-10 row-start-2 grid grid-rows-10 grid-cols-10 border"></div>
+          </div>
         </div>
       </div>
     </div>
